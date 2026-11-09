@@ -1,0 +1,193 @@
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333333;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #123c69;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #0b2545;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #7dd3fc;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #123c69;
+    border-bottom: 2px solid #123c69;
+    padding-bottom: 10px;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Skills */
+.skills-list {
+    line-height: 2;
+}
+
+/* Project Cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 220px;
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #d5dce5;
+    border-radius: 8px;
+    background-color: #f4f7fb;
+}
+
+.card h3 {
+    color: #123c69;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.card a {
+    color: #145da0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #145da0;
+}
+
+button {
+    background-color: #123c69;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #145da0;
+}
+
+/* Footer */
+footer {
+    background-color: #0b2545;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}

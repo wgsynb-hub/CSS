@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+}
+
+.card {
+    width: 280px;
+    padding: 25px;
+    margin: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.card h2 {
+    color: darkblue;
+}
+
+.card p {
+    color: #444444;
+    line-height: 1.5;
+}
